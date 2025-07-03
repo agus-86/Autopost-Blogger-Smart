@@ -3,17 +3,18 @@ name: AutoPost Blogger Smart
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */12 * * *'  # Tiap 12 jam
+    - cron: '0 */12 * * *'
 
 jobs:
   autopost:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
           node-version: '18'
 
@@ -23,3 +24,12 @@ jobs:
       - name: Run autopost script
         run: node autopost.cjs
 
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: |
+            before-new-post.png
+            after-new-post.png
+            after-publish.png
+            error-screenshot.png
