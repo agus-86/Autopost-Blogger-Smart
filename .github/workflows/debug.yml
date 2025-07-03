@@ -1,0 +1,28 @@
+name: Debug Blogger Cookie
+
+on:
+  workflow_dispatch:
+
+jobs:
+  debug-cookie:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install puppeteer
+
+      - name: Run debug script
+        run: node autopost-debug.cjs
+
+      - name: Upload screenshot
+        uses: actions/upload-artifact@v4
+        with:
+          name: status-login
+          path: status-login.png
