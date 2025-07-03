@@ -1,12 +1,7 @@
 {
-  "name": "blogger-autopost",
-  "version": "1.0.0",
-  "main": "autopost.js",
-  "scripts": {
-    "start": "node autopost.js"
-  },
+  "type": "module",
   "dependencies": {
-    "puppeteer": "^21.0.0",
+    "puppeteer": "^21.3.8",
     "rss-parser": "^3.12.0"
   }
 }
