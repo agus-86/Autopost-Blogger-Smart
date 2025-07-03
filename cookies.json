@@ -1,0 +1,42 @@
+[
+  {
+    "domain": ".blogger.com",
+    "name": "SID",
+    "value": "g.a000yghbmS2IHSCr6YJqQIXK6eDWlUv9SSWijVoGixYb81FtyCklTpayb3HxsZoAiKXvPC9SsgACgYKAQoSAQ8SFQHGX2Mi7xYuwKRCrMPINXcscrn3bhoVAUF8yKrkOEnTa1NdPmkkcVdSY3nr0076",
+    "path": "/",
+    "httpOnly": true,
+    "secure": true
+  },
+  {
+    "domain": ".blogger.com",
+    "name": "SSID",
+    "value": "AZ5E499yQxqtiWJ1a",
+    "path": "/",
+    "httpOnly": true,
+    "secure": true
+  },
+  {
+    "domain": ".blogger.com",
+    "name": "HSID",
+    "value": "ABh-5uSPGYjDoS95L",
+    "path": "/",
+    "httpOnly": true,
+    "secure": true
+  },
+  {
+    "domain": ".blogger.com",
+    "name": "SAPISID",
+    "value": "9nrOvOKaJdIvcTMP/A6gSEb0Sahogsyr8j",
+    "path": "/",
+    "httpOnly": true,
+    "secure": true
+  },
+  {
+    "domain": ".blogger.com",
+    "name": "APISID",
+    "value": "m1Wfi2zEwJzDVxSl/ASAvFzCll0rmEfRZ0",
+    "path": "/",
+    "httpOnly": true,
+    "secure": true
+  }
+]
